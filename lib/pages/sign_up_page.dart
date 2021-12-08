@@ -17,7 +17,7 @@ class SignUpPage extends StatelessWidget {
         child: AuthAppBar(),
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 50),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

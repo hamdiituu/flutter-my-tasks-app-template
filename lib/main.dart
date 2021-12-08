@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:my_tasks_template/pages/forgat_password_page.dart';
+import 'package:my_tasks_template/pages/home_page.dart';
 import 'package:my_tasks_template/pages/landing_page.dart';
 import 'package:my_tasks_template/pages/login_page.dart';
 import 'package:my_tasks_template/pages/sign_up_page.dart';
@@ -27,7 +28,8 @@ class Application extends StatelessWidget {
         '/landing': (context) => const LandingPage(),
         '/login': (context) => const LoginPage(),
         '/sign_up': (context) => const SignUpPage(),
-        '/forgat_password': (context) => const ForgatPasswordPage()
+        '/forgat_password': (context) => const ForgatPasswordPage(),
+        '/home': (context) => const HomePage()
       },
     );
   }

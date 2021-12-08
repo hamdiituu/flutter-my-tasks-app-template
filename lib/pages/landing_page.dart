@@ -13,21 +13,14 @@ class LandingPage extends StatelessWidget {
 
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 50),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
-          //crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                const Text('Welcome',
-                    style:
-                        TextStyle(fontSize: 37, fontWeight: FontWeight.w400)),
-                Container(
-                    margin: const EdgeInsets.only(left: 10),
-                    child: const Text('🎉', style: TextStyle(fontSize: 35)))
-              ],
-            ),
+            const Text('Welcome 🎉',
+                textAlign: TextAlign.left,
+                style: TextStyle(fontSize: 37, fontWeight: FontWeight.bold)),
             const SizedBox(
               height: 40,
             ),
@@ -51,17 +44,21 @@ class LandingPage extends StatelessWidget {
                 bgColor: Colors.transparent,
               ),
             ),
-            TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/sign_up');
-                },
-                child: Text(
-                  'Not a member? Sign Up',
-                  style: TextStyle(
-                      color: CustomColors.darkBlue,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 12),
-                )),
+            SizedBox(
+              width: double.infinity,
+              child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/sign_up');
+                  },
+                  child: Text(
+                    'Not a member? Sign Up',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: CustomColors.darkBlue,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 12),
+                  )),
+            ),
             const SizedBox(
               height: 50,
             ),

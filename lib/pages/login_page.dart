@@ -18,7 +18,7 @@ class LoginPage extends StatelessWidget {
         child: AuthAppBar(),
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 50),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -40,7 +40,9 @@ class LoginPage extends StatelessWidget {
                 child: IconNonButton(
               labelColor: Colors.white,
               bgColor: Colors.transparent,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/home');
+              },
               labelText: 'Continune',
             )),
             TextButton(
